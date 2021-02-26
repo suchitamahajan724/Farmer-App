@@ -60,13 +60,6 @@ class _OtpState extends State<Otp> {
               ),
               Container(
                 padding: EdgeInsets.symmetric(horizontal: 50, vertical: 10),
-                //child: InkWell(
-                // onTap: () {
-
-                // Navigator.of(context).pushNamed("/dashboard");
-
-                //Navigator.of(context).pushNamed("/dashboard");
-                // handle your image tap here
                 child: PinFieldAutoFill(
                     codeLength: 4,
                     onCodeChanged: (val) {
