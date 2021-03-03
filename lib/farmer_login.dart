@@ -226,6 +226,7 @@ class _FarmerLoginState extends State<FarmerLogin> {
                               Navigator.of(context).pushNamed("/dashboard");
                               // Navigator.of(context).pushNamed("/dashboard");
                             },
+                            ),
                           new Padding(
                             padding: const EdgeInsets.only(top: 5.0),
                           ),
