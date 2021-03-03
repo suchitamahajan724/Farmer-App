@@ -273,6 +273,7 @@ class _DealerLoginState extends State<DealerLogin> {
                               Navigator.of(context).pushNamed("/dashboard");
                               // Navigator.of(context).pushNamed("/dashboard");
                             },
+                            ),
                                   new Row(
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
