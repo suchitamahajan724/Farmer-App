@@ -204,9 +204,32 @@ class _FarmerLoginState extends State<FarmerLogin> {
 
                             splashColor: Colors.redAccent,
                           ),
+                          
                           new Padding(
                             padding: const EdgeInsets.only(top: 5.0),
                           ),
+                          new RaisedButton(
+                            // height: 40.0,
+                            // minWidth: 110.0,
+                            // color: Colors.blue,
+                            //textColor: Colors.white,
+                            child: new Text("Login",
+                                style: TextStyle(
+                                  fontSize: 20,
+                                )),
+                            onPressed: () async {
+                              final signcode =
+                                  await SmsAutoFill().getAppSignature;
+                              print(signcode);
+                              //  login(),
+                              // login('username' == 'suchita25@gmail.com'),
+                              Navigator.of(context).pushNamed("/dashboard");
+                              // Navigator.of(context).pushNamed("/dashboard");
+                            },
+                          new Padding(
+                            padding: const EdgeInsets.only(top: 5.0),
+                          ),
+                          
                           new Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
